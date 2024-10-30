@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mutmut_issue_340"
+version = "0.1.0"
+description = ""
+authors = ["Adam Moss"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.13, <4.0.0"
+rich = "13.9.3"
+
+[tool.poetry.group.dev.dependencies]
+hypothesis = {extras = ["cli"], version = "6.115.5"}
+mutmut = { git = "https://github.com/boxed/mutmut/" }
+mypy = "1.13.0"
+pytest = "8.3.3"
+pytest-cov = "5.0.0"
+pytest-random-order = "1.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
